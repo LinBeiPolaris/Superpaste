@@ -1,0 +1,12 @@
+#simulate-typing-fab:hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+#simulate-typing-fab:focus {
+  outline: none;
+}
+#simulate-typing-fab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

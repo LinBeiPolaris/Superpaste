@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Superpaste",
+  "version": "1.0",
+  "description": "模拟人类打字输入文本，带拖动悬浮按钮、快捷键和暂停功能，绕过网站粘贴限制。",
+  "permissions": [
+    "clipboardRead",
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Simulate Typing",
+    "default_icon": "Polaris.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "icons": {
+    "128": "Polaris.png"
+  },
+  "commands": {
+    "simulate-typing": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Q"
+      },
+      "description": "模拟打字粘贴"
+    }
+  }
+}

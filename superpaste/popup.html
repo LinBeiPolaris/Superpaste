@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 300px; padding: 10px; font-family: Arial; }
+    textarea { width: 100%; height: 100px; margin-bottom: 10px; }
+    button { width: 100%; padding: 10px; margin-bottom: 5px; background: #4285f4; color: white; border: none; cursor: pointer; }
+    button:hover { background: #3367d6; }
+    #toggleTypingBtn { background: #f44336; }
+    #toggleTypingBtn.enabled { background: #4caf50; }
+  </style>
+</head>
+<body>
+  <h3>模仿打字工具</h3>
+  <textarea id="customText" placeholder="输入要模拟的文本"></textarea>
+  <button id="pasteBtn">从剪贴板模拟输入</button>
+  <button id="customBtn">模拟输入自定义文本</button>
+  <button id="toggleTypingBtn">暂停模拟打字</button>
+  <script src="popup.js"></script>
+</body>
+</html>
